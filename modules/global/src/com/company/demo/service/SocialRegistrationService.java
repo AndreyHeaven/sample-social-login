@@ -3,7 +3,8 @@ package com.company.demo.service;
 import com.haulmont.cuba.security.entity.User;
 
 public interface SocialRegistrationService {
-    String NAME = "demo_SocialRegistrationService";
+    String NAME = "sociallogindemo_SocialRegistrationService";
 
-    User findOrRegisterUser(String facebookId, String email, String name);
+    User findOrRegisterUser(String socialId, String email, String name);
+
 }

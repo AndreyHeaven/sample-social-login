@@ -17,4 +17,43 @@ public interface SocialRegistrationConfig extends Config {
     @Property("social.defaultGroupId")
     @Factory(factory = UuidTypeFactory.class)
     UUID getDefaultGroupId();
+
+    @Default("id,name,email")
+    @Property("facebook.fields")
+    String getFacebookFields();
+
+    @Property("facebook.appId")
+    String getFacebookAppId();
+
+    @Property("facebook.appSecret")
+    String getFacebookAppSecret();
+
+    @Property("facebook.scope")
+    String getFacebookAppScope();
+
+    @Default("id,name,email")
+    @Property("google.fields")
+    String getGoogleFields();
+
+    @Property("google.appId")
+    String getGoogleAppId();
+
+    @Property("google.appSecret")
+    String getGoogleAppSecret();
+
+    @Property("google.scope")
+    String getGoogleAppScope();
+
+    @Default("id,name,email")
+    @Property("vk.fields")
+    String getVkFields();
+
+    @Property("vk.appId")
+    String getVkAppId();
+
+    @Property("vk.appSecret")
+    String getVkAppSecret();
+
+    @Property("vk.scope")
+    String getVkAppScope();
 }

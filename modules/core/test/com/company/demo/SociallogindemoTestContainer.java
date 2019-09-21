@@ -9,9 +9,9 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class DemoTestContainer extends TestContainer {
+public class SociallogindemoTestContainer extends TestContainer {
 
-    public DemoTestContainer() {
+    public SociallogindemoTestContainer() {
         super();
         appComponents = new ArrayList<>(Arrays.asList(
                 "com.haulmont.cuba"
@@ -29,7 +29,7 @@ public class DemoTestContainer extends TestContainer {
                 // Add this file which is located in CUBA and defines some properties
                 // specifically for test environment. You can replace it with your own
                 // or add another one in the end.
-                "test-app.properties");
+                "com/haulmont/cuba/testsupport/test-app.properties");
         initDbProperties();
     }
 
@@ -51,9 +51,9 @@ public class DemoTestContainer extends TestContainer {
         dbPassword = resourceElem.attributeValue("password");
     }
 
-    public static class Common extends DemoTestContainer {
+    public static class Common extends SociallogindemoTestContainer {
 
-        public static final DemoTestContainer.Common INSTANCE = new DemoTestContainer.Common();
+        public static final SociallogindemoTestContainer.Common INSTANCE = new SociallogindemoTestContainer.Common();
 
         private static volatile boolean initialized;
 

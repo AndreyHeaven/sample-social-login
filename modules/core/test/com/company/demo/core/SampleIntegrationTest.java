@@ -1,6 +1,6 @@
 package com.company.demo.core;
 
-import com.company.demo.DemoTestContainer;
+import com.company.demo.SociallogindemoTestContainer;
 import com.haulmont.cuba.core.EntityManager;
 import com.haulmont.cuba.core.Persistence;
 import com.haulmont.cuba.core.Transaction;
@@ -21,7 +21,7 @@ import static org.junit.Assert.assertEquals;
 public class SampleIntegrationTest {
 
     @ClassRule
-    public static DemoTestContainer cont = DemoTestContainer.Common.INSTANCE;
+    public static SociallogindemoTestContainer cont = SociallogindemoTestContainer.Common.INSTANCE;
 
     private Metadata metadata;
     private Persistence persistence;

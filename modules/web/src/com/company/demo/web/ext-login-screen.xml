@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        xmlns:ext="http://schemas.haulmont.com/cuba/window-ext.xsd"
+        extends="com/haulmont/cuba/web/app/login/login-screen.xml"
+        messagesPack="com.company.demo.web">
+    <layout>
+        <vbox id="loginWrapper">
+            <vbox id="loginMainBox">
+                <hbox id="socialBox" margin="true" spacing="true" align="MIDDLE_CENTER">
+                    <button id="facebookBtn"
+                            align="MIDDLE_CENTER"
+                            stylename="friendly"
+                            caption="Facebook"
+                            icon="font-icon:FACEBOOK"/>
+
+                    <button id="googleBtn"
+                            align="MIDDLE_CENTER"
+                            caption="Google"
+                            stylename="friendly"
+                            icon="font-icon:GOOGLE"/>
+
+                    <button id="vkBtn"
+                            align="MIDDLE_CENTER"
+                            caption="Vk.com"
+                            stylename="friendly"
+                            icon="font-icon:VK"/>
+                </hbox>
+
+            </vbox>
+        </vbox>
+    </layout>
+</window>
